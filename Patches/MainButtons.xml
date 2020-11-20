@@ -34,6 +34,22 @@
     </Operation>
     <Operation Class="PatchOperationFindMod">
         <mods>
+            <li>Numbers (patched) 1.2</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/MainButtonDef[defName="kNumbersOverviewTab"]</xpath>
+                    <value>
+                        <iconPath>UI/Buttons/MainButtons/IconNumbers</iconPath>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
             <li>Misc. Robots</li>
         </mods>
         <match Class="PatchOperationSequence">
@@ -315,6 +331,38 @@
 		  <xpath>/Defs/MainButtonDef[defName="DrugResponse"]/iconPath</xpath>
 		  <value>
 			<iconPath>UI/Buttons/MainButtons/IconDrugResponse</iconPath>
+		  </value>
+		</li>
+	  </operations>
+	</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Simple Slavery [1.1]</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+		<li Class="PatchOperationReplace">
+		  <xpath>/Defs/MainButtonDef[defName="SlavesTab"]/iconPath</xpath>
+		  <value>
+			<iconPath>UI/Buttons/MainButtons/IconSimpleSlavery</iconPath>
+		  </value>
+		</li>
+	  </operations>
+	</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>OnlineCity</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+		<li Class="PatchOperationReplace">
+		  <xpath>/Defs/MainButtonDef[defName="MainButtonOnline"]/iconPath</xpath>
+		  <value>
+			<iconPath>UI/Buttons/MainButtons/IconOnlineCity</iconPath>
 		  </value>
 		</li>
 	  </operations>
